@@ -1,5 +1,13 @@
 import './index.css';
-import { MyClass } from './example-unit';
+import { Watch } from './example-unit';
 
-const a = new MyClass(2);
-console.log('number is', a.get());
+let timeWatch: Watch | null = null;
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM content loaded.");
+    if (!timeWatch) {
+        console.log("Creating new Watch instance...");
+        timeWatch = new Watch();
+        timeWatch.start();
+    }
+});

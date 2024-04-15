@@ -1,1 +1,5 @@
-export * from './example-class';
+export * from './Watch'
+export * from './Hour'
+export * from './Minute'
+export * from './Matrix'
+export * from './Vector'
